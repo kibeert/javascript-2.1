@@ -121,3 +121,16 @@ console.log(Math.sign(-4.8));
 console.log(Math.sign(4.8));
 
 console.log(Math.pow(2,3))
+
+const arr = [ 20,45,78,14,24,87,34,46]
+console.log(Math.min(arr))
+console.log(Math.min(20,45,78,14,24,87,34,46))
+console.log(Math.max(20,45,78,14,24,87,34,46))
+console.log(Math.random(1,80))
+let l = Math.floor(Math.random() * 100)
+console.log(l)
+
+function getRandomInteger(min, max){
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+console.log(getRandomInteger(1, 200))
