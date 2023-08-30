@@ -144,7 +144,7 @@ console.log(new Date().getHours())
 console.log(new Date().getDay())
 
 let days;
-switch (new Date().getDay()){
+switch (new Date().getDay(12)){
         case 0:
             days = "Sunday";
             break;
@@ -165,6 +165,23 @@ switch (new Date().getDay()){
             break;
         case 6:
             days= "Saturday";
+            break;
+        default:
+            text= "looking forward to seeing you"
             
 }
 console.log("today is"+"  " +days)
+
+const carz = ["Benz", "Audi", "Toyota", "subaru", "volkswagen", "Rolce Royce", "Ford", "Hyundai"]
+let sorted = carz.sort(function(a,b){
+    let x = a.toLowerCase();
+    let y = a.toLowerCase();
+    if (x<y){return -1};
+    if (x>y){return 1};
+    return 0;
+})
+console.log(sorted)
+
+for (let i = 0; i<=carz.length;i++){
+    carz = carz + i
+}
