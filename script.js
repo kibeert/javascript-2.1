@@ -81,3 +81,43 @@ console.log(fruitz2)
 
 let position = fruitz.indexOf("apple") + 1;
 console.log(position)
+
+let a = new Date()
+console.log(a)
+
+function showDate(){
+    console.log(Date())
+}
+showDate()
+
+let b = new Date();
+console.log(b.getFullYear())
+
+const c = new Date();
+console.log(c.setMonth(3))
+console.log(Math.PI)//returns 3.142...
+console.log(Math.E)//returns Euler's number...
+console.log(Math.sqrt(4))//returns square root of 2
+let e = Math.SQRT2;
+console.log(e)
+
+const f = 25;
+let square = Math.sqrt(f)
+console.log(square)
+
+let g = 2.657;
+let h = Math.round(g)
+console.log(h);//rounds up to the nearest integer
+
+let i = Math.trunc(g)
+console.log(i)
+
+let j = Math.ceil(g)
+let k = Math.floor(g)
+console.log(j);
+console.log(k);
+
+console.log(Math.sign(-4.8));
+console.log(Math.sign(4.8));
+
+console.log(Math.pow(2,3))
