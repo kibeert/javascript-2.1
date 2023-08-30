@@ -134,3 +134,37 @@ function getRandomInteger(min, max){
     return Math.floor(Math.random() * (max - min)) + min;
 }
 console.log(getRandomInteger(1, 200))
+
+let m = parseInt("what is the time in 24 hr format")
+if (m>18){
+    alert("Have a good day?")
+}
+console.log(new Date().getHours())
+
+console.log(new Date().getDay())
+
+let days;
+switch (new Date().getDay()){
+        case 0:
+            days = "Sunday";
+            break;
+        case 1:
+            days = "Monday";
+            break;
+        case 2:
+            days = "Tuesday";
+            break;
+        case 3:
+            days = "Wednesday";
+            break;
+        case 4:
+            days = "Thursday";
+            break;
+        case 5:
+            days = "Friday";
+            break;
+        case 6:
+            days= "Saturday";
+            
+}
+console.log("today is"+"  " +days)
