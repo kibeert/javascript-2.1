@@ -182,6 +182,13 @@ let sorted = carz.sort(function(a,b){
 })
 console.log(sorted)
 
-for (let i = 0; i<=carz.length;i++){
-    carz = carz + i
-}
+
+const you= new Date()
+console.log(you)
+console.log(new Date().getDay())
+
+let dayz = new Date().getDay();
+if (dayz < 5){
+    console.log("It ain't Friday yet");
+};
+console.log(new Date().getFullYear())
