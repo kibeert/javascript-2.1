@@ -6,18 +6,14 @@
     <title>javascript</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <p id="demo">Click on the button below to view directions to nairobi</p>
+    <button onclick="myFunction(10,15)" >Directions to nairobi</button>
     <script>
-        let carname = "volvo"
-        document.getElementById('demo').innerHTML = carname
-        const array = ["Volvo", "Mazda", "Toyota"]
-        array[0]= "Bmw"
-        array.push("Audi")
-        console.log(array)
-        let x=10
-        let y = 2
-        console.log(x**y)
-        console.log(Math.pow(x, y))
+       function myFunction(p, z){
+        return p * z
+    myFunction(10,5)
+        
+}
     </script>
 </body>
 </html>
