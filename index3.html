@@ -37,6 +37,11 @@
             return value > 20
         }
         console.log(x)
+        let y = points.reduce(reduced)
+        function reduced(total, value){
+            return total +  value
+        }
+        console.log(y)
     </script>
 </body>
 </html>
