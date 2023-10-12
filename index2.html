@@ -6,14 +6,12 @@
     <title>javascript</title>
 </head>
 <body>
-    <p id="demo">Click on the button below to view directions to nairobi</p>
-    <button onclick="myFunction(10,15)" >Directions to nairobi</button>
+    <button id="demo" onmouseover="Myfunction()">The date is</button>
     <script>
-       function myFunction(p, z){
-        return p * z
-    myFunction(10,5)
-        
-}
+        function Myfunction(){
+            document.getElementById('demo').innerHTML = "today is" + Date()
+        }
+       let 
     </script>
 </body>
 </html>
