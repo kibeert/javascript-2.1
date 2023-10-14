@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js/title>
+    <title>Js this</title>
+    
 </head>
+<p id="demo">This </p>
+<button onclick="this.style.display = 'none'">Remove me</button>
 <body>
-   
+    <script>
+        const person= {
+            name: 'John',
+            lname:"Doe",
+            id: 3245,
+            fullname : function(){
+                return this.name + " " + this.lname
+            }
+        }
+        const member={
+            firstname : "Hege",
+            lastname : "Pege",
+        }
+        console.log(person.fullname())
+        let fullname = person.fullname.bind(member)
+        console.log(fullname())
+        function myfunc(){
+            return this
+        }
+        hello = function(){
+            return "Hello world"
+        }
+        document.getElementById('demo').innerHTML = hello()
+    </script>
 </body>
 </html>
