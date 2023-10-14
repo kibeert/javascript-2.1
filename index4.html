@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js arrow</title>
+    <title>Js Classes</title>
 </head>
 <body>
-    <p id="demo">Arrow</p>
+    classes in js uses the cass keyword and a constructor
     <script>
-        hello = function(){
-            document.getElementById('demo') += this
-            
+        class car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
         }
-    </script>
+        const mycar1 = new car("Ford", 2003)
+        console.log(mycar1.name)
+        const mycar2 = new car("Audi Q8", 2016)
+        console.log(mycar2)
+        console.log(mycar2.year)
+        x = mycar2.year
+        y= mycar2.name
+        console.log("The " + y+  " " +"is a " + x +"model")
+        class person{
+            constructor(name, year){
+                this.name= name;
+                this.year = year;
+
+            }
+            age(){
+                const date = new Date();
+                return date.getFullYear()- this.year;
+            }
+        }
+        const person1= new person("KIbet", 2003)
+        console.log(person1)
+        console.log(person1.age())
+
+</script>
 </body>
 </html>
