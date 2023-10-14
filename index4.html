@@ -3,37 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js this</title>
-    
+    <title>Js arrow</title>
 </head>
-<p id="demo">This </p>
-<button onclick="this.style.display = 'none'">Remove me</button>
-<button onclick="junh()">Arrow</button>
 <body>
+    <p id="demo">Arrow</p>
     <script>
-        const person= {
-            name: 'John',
-            lname:"Doe",
-            id: 3245,
-            fullname : function(){
-                return this.name + " " + this.lname
-            }
-        }
-        const member={
-            firstname : "Hege",
-            lastname : "Pege",
-        }
-        console.log(person.fullname())
-        let fullname = person.fullname.bind(member)
-        console.log(fullname())
-        function myfunc(){
-            return this
-        }
         hello = function(){
-            return "Hello world"
+            document.getElementById('demo') += this
+            
         }
-        document.getElementById('demo').innerHTML = hello()
-        junh = () => this.style.display = "none"
     </script>
 </body>
 </html>
