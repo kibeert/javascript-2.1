@@ -8,6 +8,7 @@
 </head>
 <p id="demo">This </p>
 <button onclick="this.style.display = 'none'">Remove me</button>
+<button onclick="junh()">Arrow</button>
 <body>
     <script>
         const person= {
@@ -32,6 +33,7 @@
             return "Hello world"
         }
         document.getElementById('demo').innerHTML = hello()
+        junh = () => this.style.display = "none"
     </script>
 </body>
 </html>
